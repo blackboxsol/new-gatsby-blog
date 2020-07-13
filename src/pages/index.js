@@ -23,11 +23,6 @@ export default ({ data }) => {
       <SEO title="Home" />
       <div>
         <h1>Blackbox's thoughts</h1>
-        <h3>
-        {
-          data.allMarkdownRemark.totalCount
-        }
-        </h3>
         {
           data.allMarkdownRemark.edges.map(({node}) =>(
             <div key={node.id}>
